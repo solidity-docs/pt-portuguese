@@ -26,6 +26,10 @@ One can use ``solc --ir-optimized --optimize`` to produce an
 optimized Yul IR for a Solidity source. Similarly, one can use ``solc --strict-assembly --optimize``
 for a stand-alone Yul mode.
 
+.. note::
+    The `peephole optimizer <https://en.wikipedia.org/wiki/Peephole_optimization>`_ and the inliner are always
+    enabled by default and can only be turned off via the :ref:`Standard JSON <compiler-api>`.
+
 You can find more details on both optimizer modules and their optimization steps below.
 
 Benefits of Optimizing Solidity Code
@@ -683,7 +687,7 @@ Conflicting values are resolved in the following way:
 
 - "unused", "undecided" -> "undecided"
 - "unused", "used" -> "used"
-- "undecided, "used" -> "used"
+- "undecided", "used" -> "used"
 
 For for-loops, the condition, body and post-part are visited twice, taking
 the joining control-flow at the condition into account.
