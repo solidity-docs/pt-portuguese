@@ -210,22 +210,25 @@ an exception to this rule.
     declare its type as ``address payable`` to make this requirement visible. Also,
     try to make this distinction or conversion as early as possible.
 
+    The distinction between ``address`` and ``address payable`` was introduced with version 0.5.0.
+    Also starting from that version, contracts are not implicitly convertible to the ``address`` type, but can still be explicitly converted to
+    ``address`` or to ``address payable``, if they have a receive or payable fallback function.
+
+
 Operators:
 
 * ``<=``, ``<``, ``==``, ``!=``, ``>=`` and ``>``
 
 .. warning::
     If you convert a type that uses a larger byte size to an ``address``, for example ``bytes32``, then the ``address`` is truncated.
-    To reduce conversion ambiguity version 0.4.24 and higher of the compiler force you make the truncation explicit in the conversion.
+    To reduce conversion ambiguity, starting with version 0.4.24, the compiler will force you to make the truncation explicit in the conversion.
     Take for example the 32-byte value ``0x111122223333444455556666777788889999AAAABBBBCCCCDDDDEEEEFFFFCCCC``.
 
     You can use ``address(uint160(bytes20(b)))``, which results in ``0x111122223333444455556666777788889999aAaa``,
     or you can use ``address(uint160(uint256(b)))``, which results in ``0x777788889999AaAAbBbbCcccddDdeeeEfFFfCcCc``.
 
 .. note::
-    The distinction between ``address`` and ``address payable`` was introduced with version 0.5.0.
-    Also starting from that version, contracts do not derive from the address type, but can still be explicitly converted to
-    ``address`` or to ``address payable``, if they have a receive or payable fallback function.
+    Mixed-case hexadecimal numbers conforming to `EIP-55 <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md>`_ are automatically treated as literals of the ``address`` type. See :ref:`Address Literals<address_literals>`.
 
 .. _members-of-addresses:
 
@@ -333,7 +336,7 @@ on ``call``.
 * ``code`` and ``codehash``
 
 You can query the deployed code for any smart contract. Use ``.code`` to get the EVM bytecode as a
-``bytes memory``, which might be empty. Use ``.codehash`` get the Keccak-256 hash of that code
+``bytes memory``, which might be empty. Use ``.codehash`` to get the Keccak-256 hash of that code
 (as a ``bytes32``). Note that ``addr.codehash`` is cheaper than using ``keccak256(addr.code)``.
 
 .. note::
