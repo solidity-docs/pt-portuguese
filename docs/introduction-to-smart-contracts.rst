@@ -186,7 +186,9 @@ transactions.
 
 To listen for this event, you could use the following
 JavaScript code, which uses `web3.js <https://github.com/ethereum/web3.js/>`_ to create the ``Coin`` contract object,
-and any user interface calls the automatically generated ``balances`` function from above::
+and any user interface calls the automatically generated ``balances`` function from above:
+
+.. code-block:: javascript
 
     Coin.Sent().watch({}, '', function(error, result) {
         if (!error) {
@@ -504,10 +506,10 @@ operations, loops should be preferred over recursive calls. Furthermore,
 only 63/64th of the gas can be forwarded in a message call, which causes a
 depth limit of a little less than 1000 in practice.
 
-.. index:: delegatecall, callcode, library
+.. index:: delegatecall, library
 
-Delegatecall / Callcode and Libraries
-=====================================
+Delegatecall and Libraries
+==========================
 
 There exists a special variant of a message call, named **delegatecall**
 which is identical to a message call apart from the fact that
@@ -559,6 +561,11 @@ at that address is sent to a designated target and then the storage and code
 is removed from the state. Removing the contract in theory sounds like a good
 idea, but it is potentially dangerous, as if someone sends Ether to removed
 contracts, the Ether is forever lost.
+
+.. warning::
+    From version 0.8.18 and up, the use of ``selfdestruct`` in both Solidity and Yul will trigger a
+    deprecation warning, since the ``SELFDESTRUCT`` opcode will eventually undergo breaking changes in behaviour
+    as stated in `EIP-6049 <https://eips.ethereum.org/EIPS/eip-6049>`_.
 
 .. warning::
     Even if a contract is removed by ``selfdestruct``, it is still part of the
