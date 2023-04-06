@@ -122,8 +122,8 @@ hiding new and different behavior in existing code.
           modifier mod() { _; _; }
       }
 
-  If you execute ``f(0)`` in the old code generator, it will return ``2``, while
-  it will return ``1`` when using the new code generator.
+  If you execute ``f(0)`` in the old code generator, it will return ``1``, while
+  it will return ``0`` when using the new code generator.
 
   .. code-block:: solidity
 
@@ -174,8 +174,8 @@ hiding new and different behavior in existing code.
 
   The function ``preincr_u8(1)`` returns the following values:
 
-  - Old code generator: 3 (``1 + 2``) but the return value is unspecified in general
-  - New code generator: 4 (``2 + 2``) but the return value is not guaranteed
+  - Old code generator: ``3`` (``1 + 2``) but the return value is unspecified in general
+  - New code generator: ``4`` (``2 + 2``) but the return value is not guaranteed
 
   .. index:: ! evaluation order; function arguments
 
