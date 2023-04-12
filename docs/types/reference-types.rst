@@ -85,8 +85,10 @@ Data locations are not only relevant for persistency of data, but also for the s
             // The following does not work; it would need to create a new temporary /
             // unnamed array in storage, but storage is "statically" allocated:
             // y = memoryArray;
-            // This does not work either, since it would "reset" the pointer, but there
-            // is no sensible location it could point to.
+            // Similarly, "delete y" is not valid, as assignments to local variables
+            // referencing storage objects can only be made from existing storage objects.
+            // It would "reset" the pointer, but there is no sensible location it could point to.
+            // For more details see the documentation of the "delete" operator.
             // delete y;
             g(x); // calls g, handing over a reference to x
             h(x); // calls h and creates an independent, temporary copy in memory
@@ -131,8 +133,12 @@ It is possible to mark state variable arrays ``public`` and have Solidity create
 The numeric index becomes a required parameter for the getter.
 
 Accessing an array past its end causes a failing assertion. Methods ``.push()`` and ``.push(value)`` can be used
-to append a new element at the end of the array, where ``.push()`` appends a zero-initialized element and returns
+to append a new element at the end of a dynamically-sized array, where ``.push()`` appends a zero-initialized element and returns
 a reference to it.
+
+.. note::
+    Dynamically-sized arrays can only be resized in storage.
+    In memory, such arrays can be of arbitrary size but the size cannot be changed once an array is allocated.
 
 .. index:: ! string, ! bytes
 
@@ -379,8 +385,10 @@ Array Members
         uint[2**20] aLotOfIntegers;
         // Note that the following is not a pair of dynamic arrays but a
         // dynamic array of pairs (i.e. of fixed size arrays of length two).
-        // Because of that, T[] is always a dynamic array of T, even if T
-        // itself is an array.
+        // In Solidity, T[k] and T[] are always arrays with elements of type T,
+        // even if T itself is an array.
+        // Because of that, bool[2][] is a dynamic array of elements
+        // that are bool[2]. This is different from other languages, like C.
         // Data location for all state variables is storage.
         bool[2][] pairsOfFlags;
 
@@ -678,11 +686,11 @@ shown in the following example:
             uint fundingGoal;
             uint numFunders;
             uint amount;
-            mapping (uint => Funder) funders;
+            mapping(uint => Funder) funders;
         }
 
         uint numCampaigns;
-        mapping (uint => Campaign) campaigns;
+        mapping(uint => Campaign) campaigns;
 
         function newCampaign(address payable beneficiary, uint goal) public returns (uint campaignID) {
             campaignID = numCampaigns++; // campaignID is return variable

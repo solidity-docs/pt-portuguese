@@ -45,9 +45,9 @@ Everything you use in a smart contract is publicly visible, even
 local variables and state variables marked ``private``.
 
 Using random numbers in smart contracts is quite tricky if you do not want
-miners to be able to cheat.
+block builders to be able to cheat.
 
-Re-Entrancy
+Reentrancy
 ===========
 
 Any interaction from a contract (A) with another contract (B) and any transfer
@@ -97,8 +97,8 @@ as it uses ``call`` which forwards all remaining gas by default:
         }
     }
 
-To avoid re-entrancy, you can use the Checks-Effects-Interactions pattern as
-outlined further below:
+To avoid reentrancy, you can use the Checks-Effects-Interactions pattern as
+demonstrated below:
 
 .. code-block:: solidity
 
@@ -116,7 +116,14 @@ outlined further below:
         }
     }
 
-Note that re-entrancy is not only an effect of Ether transfer but of any
+The Checks-Effects-Interactions pattern ensures that all code paths through a contract complete all required checks
+of the supplied parameters before modifying the contract's state (Checks); only then it makes any changes to the state (Effects);
+it may make calls to functions in other contracts *after* all planned state changes have been written to
+storage (Interactions). This is a common foolproof way to prevent *reentrancy attacks*, where an externally called
+malicious contract is able to double-spend an allowance, double-withdraw a balance, among other things, by using logic that calls back into the
+original contract before it has finalized its transaction.
+
+Note that reentrancy is not only an effect of Ether transfer but of any
 function call on another contract. Furthermore, you also have to take
 multi-contract situations into account. A called contract could modify the
 state of another contract you depend on.
@@ -329,7 +336,7 @@ field of a ``struct`` that is the base type of a dynamic storage array.  The
     pragma solidity >=0.6.0 <0.9.0;
 
     contract Map {
-        mapping (uint => uint)[] array;
+        mapping(uint => uint)[] array;
 
         function allocate(uint newMaps) public {
             for (uint i = 0; i < newMaps; i++)
@@ -422,7 +429,7 @@ should be the very last step in any function.
 
 Early contracts delayed some effects and waited for external function
 calls to return in a non-error state. This is often a serious mistake
-because of the re-entrancy problem explained above.
+because of the reentrancy problem explained above.
 
 Note that, also, calls to known contracts might in turn cause calls to
 unknown contracts, so it is probably better to just always apply this pattern.
