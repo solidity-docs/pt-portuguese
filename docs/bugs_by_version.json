@@ -1083,8 +1083,9 @@
     },
     "0.5.10": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1100,8 +1101,9 @@
     },
     "0.5.11": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1116,8 +1118,9 @@
     },
     "0.5.12": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1132,8 +1135,9 @@
     },
     "0.5.13": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1148,8 +1152,9 @@
     },
     "0.5.14": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1166,8 +1171,9 @@
     },
     "0.5.15": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1183,8 +1189,9 @@
     },
     "0.5.16": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1199,8 +1206,9 @@
     },
     "0.5.17": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1338,8 +1346,9 @@
     },
     "0.5.8": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1358,8 +1367,9 @@
     },
     "0.5.9": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1377,8 +1387,9 @@
     },
     "0.6.0": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1394,8 +1405,9 @@
     },
     "0.6.1": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1410,9 +1422,10 @@
     },
     "0.6.10": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1423,9 +1436,10 @@
     },
     "0.6.11": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1436,9 +1450,10 @@
     },
     "0.6.12": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1449,8 +1464,9 @@
     },
     "0.6.2": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1465,8 +1481,9 @@
     },
     "0.6.3": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1481,8 +1498,9 @@
     },
     "0.6.4": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
             "EmptyByteArrayCopy",
@@ -1497,8 +1515,9 @@
     },
     "0.6.5": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1513,8 +1532,9 @@
     },
     "0.6.6": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1528,8 +1548,9 @@
     },
     "0.6.7": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1543,8 +1564,9 @@
     },
     "0.6.8": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1555,9 +1577,10 @@
     },
     "0.6.9": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1569,9 +1592,10 @@
     },
     "0.7.0": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1582,9 +1606,10 @@
     },
     "0.7.1": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1596,9 +1621,10 @@
     },
     "0.7.2": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1609,9 +1635,10 @@
     },
     "0.7.3": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching",
@@ -1621,9 +1648,10 @@
     },
     "0.7.4": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching"
@@ -1632,9 +1660,10 @@
     },
     "0.7.5": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching"
@@ -1643,9 +1672,10 @@
     },
     "0.7.6": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching"
@@ -1654,9 +1684,10 @@
     },
     "0.8.0": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching"
@@ -1665,9 +1696,10 @@
     },
     "0.8.1": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching"
@@ -1676,55 +1708,84 @@
     },
     "0.8.10": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation"
+            "NestedCalldataArrayAbiReencodingSizeValidation"
         ],
         "released": "2021-11-09"
     },
     "0.8.11": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "AbiEncodeCallLiteralAsFixedBytesBug"
         ],
         "released": "2021-12-20"
     },
     "0.8.12": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "AbiEncodeCallLiteralAsFixedBytesBug"
         ],
         "released": "2022-02-16"
     },
     "0.8.13": {
         "bugs": [
+            "StorageWriteRemovalBeforeConditionalTermination",
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "InlineAssemblyMemorySideEffects",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation"
+            "NestedCalldataArrayAbiReencodingSizeValidation"
         ],
         "released": "2022-03-16"
     },
     "0.8.14": {
         "bugs": [
+            "StorageWriteRemovalBeforeConditionalTermination",
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "InlineAssemblyMemorySideEffects"
         ],
         "released": "2022-05-17"
     },
     "0.8.15": {
-        "bugs": [],
+        "bugs": [
+            "StorageWriteRemovalBeforeConditionalTermination",
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup"
+        ],
         "released": "2022-06-15"
+    },
+    "0.8.16": {
+        "bugs": [
+            "StorageWriteRemovalBeforeConditionalTermination"
+        ],
+        "released": "2022-08-08"
+    },
+    "0.8.17": {
+        "bugs": [],
+        "released": "2022-09-08"
+    },
+    "0.8.18": {
+        "bugs": [],
+        "released": "2023-02-01"
+    },
+    "0.8.19": {
+        "bugs": [],
+        "released": "2023-02-22"
     },
     "0.8.2": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory",
             "KeccakCaching"
@@ -1733,9 +1794,10 @@
     },
     "0.8.3": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables",
             "ABIDecodeTwoDimensionalArrayMemory"
         ],
@@ -1743,45 +1805,50 @@
     },
     "0.8.4": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables"
         ],
         "released": "2021-04-21"
     },
     "0.8.5": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables"
         ],
         "released": "2021-06-10"
     },
     "0.8.6": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables"
         ],
         "released": "2021-06-22"
     },
     "0.8.7": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "SignedImmutables"
         ],
         "released": "2021-08-11"
     },
     "0.8.8": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation",
+            "NestedCalldataArrayAbiReencodingSizeValidation",
             "UserDefinedValueTypesBug",
             "SignedImmutables"
         ],
@@ -1789,9 +1856,10 @@
     },
     "0.8.9": {
         "bugs": [
+            "AbiReencodingHeadOverflowWithStaticArrayCleanup",
             "DirtyBytesArrayToStorage",
             "DataLocationChangeInInternalOverride",
-            "NestedCallataArrayAbiReencodingSizeValidation"
+            "NestedCalldataArrayAbiReencodingSizeValidation"
         ],
         "released": "2021-09-29"
     }
