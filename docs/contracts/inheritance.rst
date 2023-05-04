@@ -40,7 +40,7 @@ Details are given in the following example.
 
     // SPDX-License-Identifier: GPL-3.0
     pragma solidity >=0.7.0 <0.9.0;
-
+    // This will report a warning due to deprecated selfdestruct
 
     contract Owned {
         constructor() { owner = payable(msg.sender); }
@@ -130,6 +130,7 @@ seen in the following example:
 
     // SPDX-License-Identifier: GPL-3.0
     pragma solidity >=0.7.0 <0.9.0;
+    // This will report a warning due to deprecated selfdestruct
 
     contract owned {
         constructor() { owner = payable(msg.sender); }
@@ -162,6 +163,7 @@ explicitly in the final override, but this function will bypass
 
     // SPDX-License-Identifier: GPL-3.0
     pragma solidity >=0.7.0 <0.9.0;
+    // This will report a warning due to deprecated selfdestruct
 
     contract owned {
         constructor() { owner = payable(msg.sender); }
@@ -434,11 +436,11 @@ You can use internal parameters in a constructor (for example storage pointers).
 the contract has to be marked :ref:`abstract <abstract-contract>`, because these parameters
 cannot be assigned valid values from outside but only through the constructors of derived contracts.
 
-.. warning ::
+.. warning::
     Prior to version 0.4.22, constructors were defined as functions with the same name as the contract.
     This syntax was deprecated and is not allowed anymore in version 0.5.0.
 
-.. warning ::
+.. warning::
     Prior to version 0.7.0, you had to specify the visibility of constructors as either
     ``internal`` or ``public``.
 
