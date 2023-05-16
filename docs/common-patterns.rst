@@ -34,7 +34,7 @@ you receive the funds of the person who is now the richest.
         address public richest;
         uint public mostSent;
 
-        mapping (address => uint) pendingWithdrawals;
+        mapping(address => uint) pendingWithdrawals;
 
         /// The amount of Ether sent was not higher than
         /// the currently highest amount.
@@ -55,7 +55,7 @@ you receive the funds of the person who is now the richest.
         function withdraw() public {
             uint amount = pendingWithdrawals[msg.sender];
             // Remember to zero the pending refund before
-            // sending to prevent re-entrancy attacks
+            // sending to prevent reentrancy attacks
             pendingWithdrawals[msg.sender] = 0;
             payable(msg.sender).transfer(amount);
         }
