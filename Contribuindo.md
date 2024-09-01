@@ -1,6 +1,5 @@
 
 
-```md
 # Como Contribuir para a Documentação em Português de Solidity
 
 Obrigado por se interessar em contribuir para a tradução da documentação oficial de Solidity para o português! Este guia vai te ajudar a começar corretamente.

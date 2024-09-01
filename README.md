@@ -34,7 +34,6 @@ Ao realizar a tradução, siga estas regras:
   - O código, como nomes de variáveis, não deve ser transcrito. No entanto, os comentários devem ser traduzidos para o português.
 
 ## Extensão .mdx (MDX)
-
-A documentação oficial de Solidity é composta por arquivos reStructuredText. Se você estiver usando o VS Code, por favor, utilize as seguintes extensões: MDX
+ Se você estiver usando o VS Code, por favor, utilize as seguintes extensões: MDX
 
 
