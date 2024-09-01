@@ -1,1 +1,35 @@
-*
+.DS_Store
+node_modules
+.turbo
+*.log
+.next
+dist
+dist-ssr
+*.local
+.env
+.cache
+server/dist
+public/dist
+./legacy_packages/contracts-js/abis
+.idea/
+.yalc/
+yalc.lock
+./build/
+playwright-report/
+.env/
+
+# Artifacts
+legacy_packages/cli/artifacts/
+
+# codecov binary
+codecov
+
+# Remove sitemap files (generated at build time)
+sitemap*.xml
+
+# typedoc
+legacy_packages/*/typedoc/*
+packages/*/typedoc/*
+
+*storybook.log
+storybook-static
