@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Documentação Oficial em Português de Solidity
 
-## Getting Started
+Bem-vindo à documentação oficial em português de Solidity! Por favor, note que esta documentação foi criada recentemente e está em processo de tradução, portanto, está sujeita a modificações de tempos em tempos.
 
-First, run the development server:
+## Documentação
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Assim que todas as traduções forem concluídas, o português será adicionado ao menu suspenso da documentação oficial, e o conteúdo deste repositório estará disponível para consulta. No entanto, até lá, a tradução em português estará temporariamente disponível em [https://pt-solidity.readthedocs.io/pt/latest/](https://pt-solidity.readthedocs.io/pt/latest/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Moderador e Contribuidores
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- `cameel`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Como Participar da Tradução:
 
-## Learn More
+1. **Antes de Contribuir:**
+   -   Abra [Contribuindo](/Contribuindo.md) 
 
-To learn more about Next.js, take a look at the following resources:
+2. **Rapidez nas Traduções:**
+   - Seja rápido com suas traduções! Se você perceber que não poderá mais se comprometer, avise os responsáveis para que possam atribuir a página a outra pessoa.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Qualquer pessoa que deseje contribuir com a documentação oficial de Solidity em português está livre para participar.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Regras de Tradução
 
-## Deploy on Vercel
+Ao realizar a tradução, siga estas regras:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Nomes Próprios e Vocabulário Técnico:**
+  - Para nomes próprios ou vocabulário conceitual importante para Solidity, traduza foneticamente ou mantenha o original (por exemplo, "Smart Contract" pode ser traduzido como "contrato inteligente").
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Estilo Formal:**
+  - Use uma linguagem honrosa e formal.
+
+- **Código:**
+  - O código, como nomes de variáveis, não deve ser transcrito. No entanto, os comentários devem ser traduzidos para o português.
+
+## Extensão .mdx (MDX)
+
+A documentação oficial de Solidity é composta por arquivos reStructuredText. Se você estiver usando o VS Code, por favor, utilize as seguintes extensões: MDX
+
+
