@@ -3,18 +3,18 @@
 .. _abstract-contract:
 
 ******************
-Abstract Contracts
+Contratos Abstratos
 ******************
 
-Contracts must be marked as abstract when at least one of their functions is not implemented or when
-they do not provide arguments for all of their base contract constructors.
-Even if this is not the case, a contract may still be marked abstract, such as when you do not intend
-for the contract to be created directly. Abstract contracts are similar to :ref:`interfaces` but an
-interface is more limited in what it can declare.
+Contratos devem ser marcados como abstratos quando pelo menos uma de suas funções não está implementada
+ou quando eles não fornecem argumentos para todos os construtores de contrato base. Mesmo que este não
+seja o caso, um contrato ainda pode ser marcado como abstrato, como quando você não pretende que o 
+contrato seja criado diretamente. Contratos abstratos são semelhantes a :ref:interfaces, mas uma 
+interface é mais limitada ao que pode ser declarado.
 
-An abstract contract is declared using the ``abstract`` keyword as shown in the following example.
-Note that this contract needs to be defined as abstract, because the function ``utterance()`` is declared,
-but no implementation was provided (no implementation body ``{ }`` was given).
+Um contrato abstrato é declarado usando a palavra-chave ``abstract``, como mostrado no exemplo a seguir.
+Observe que este contrato precisa ser definido como abstrato, porque a função ``utterance()`` é declarada,
+mas nenhuma implementação foi fornecida (nenhum bloco de código de implementação ``{}`` foi fornecido).
 
 .. code-block:: solidity
 
@@ -24,9 +24,10 @@ but no implementation was provided (no implementation body ``{ }`` was given).
     abstract contract Feline {
         function utterance() public virtual returns (bytes32);
     }
-
-Such abstract contracts can not be instantiated directly. This is also true, if an abstract contract itself does implement
-all defined functions. The usage of an abstract contract as a base class is shown in the following example:
+    
+Contratos abstratos não podem ser instanciados diretamente. Isso também é verdade se um contrato abstrato 
+implementar todas as funções definidas. O uso de um contrato abstrato como classe base é mostrado no 
+seguinte exemplo:
 
 .. code-block:: solidity
 
@@ -41,32 +42,31 @@ all defined functions. The usage of an abstract contract as a base class is show
         function utterance() public pure override returns (bytes32) { return "miaow"; }
     }
 
-If a contract inherits from an abstract contract and does not implement all non-implemented
-functions by overriding, it needs to be marked as abstract as well.
+Se um contrato herda de um contrato abstrato e não implementa todas as funções definidas por
+sobreposição, ele também precisa ser marcado como abstrato.
 
-Note that a function without implementation is different from
-a :ref:`Function Type <function_types>` even though their syntax looks very similar.
+Observe que uma função sem implementação é diferente de uma :ref:`Function Type <function_types>` embora sua sintaxe seja muito semelhante.
 
-Example of function without implementation (a function declaration):
+Exemplo de função sem implementação (uma declaração de função):
 
 .. code-block:: solidity
 
     function foo(address) external returns (address);
 
-Example of a declaration of a variable whose type is a function type:
+Exemplo de uma declaração de uma variável cujo tipo é um tipo de função:
 
 .. code-block:: solidity
 
     function(address) external returns (address) foo;
 
-Abstract contracts decouple the definition of a contract from its
-implementation providing better extensibility and self-documentation and
-facilitating patterns like the `Template method <https://en.wikipedia.org/wiki/Template_method_pattern>`_ and removing code duplication.
-Abstract contracts are useful in the same way that defining methods
-in an interface is useful. It is a way for the designer of the
-abstract contract to say "any child of mine must implement this method".
+Contratos abstratos desacoplam a definição de um contrato de sua
+implementação, fornecendo melhor extensibilidade e auto-documentação e
+facilitando padrões como o `Método Template <https://en.wikipedia.org/wiki/Template_method_pattern>`_ e removendo a duplicação de código.
+Contratos abstratos são úteis da mesma forma que definir métodos
+em uma interface é útil. É uma maneira para o designer do
+contrato abstrato dizer "qualquer filho meu deve implementar este método".
+
 
 .. note::
 
-  Abstract contracts cannot override an implemented virtual function with an
-  unimplemented one.
+  Contratos abstratos não podem substituir uma função virtual implementada por uma não implementada.
