@@ -142,7 +142,7 @@ ao seguinte (ignore ``external`` e ``view`` por enquanto):
 
     function minter() external view returns (address) { return minter; }
 
-Você poderia adicionar a função como a menciona acima por conta própria, mas teria uma função e uma variável de estado com o mesmo nome.
+Você poderia adicionar a função como mencionado acima por conta própria, mas teria uma função e uma variável de estado com o mesmo nome.
 Não é preciso fazer isso, o compilador resolve isso por você.
 
 .. index:: mapping
@@ -340,14 +340,14 @@ controladas pelo código armazenado junto com a conta.
 
 O endereço de uma conta externa é determinado a partir
 da chave pública, enquanto o endereço de um contrato é
-determinado no momento en que o contrato é criado
+determinado no momento em que o contrato é criado
 (ele é derivado do endereço do criador e do número
 de transações enviadas a partir dasse endereço, o chamado "nonce").
 
 Independente de a conta armazenar ou não código, ambos os tipos são
 tratados de forma igual pela EVM.
 
-Cada conta possui um armazenamento persistente de chave-valor que mapeia palavras de 256 bits para paravras de 256 bits
+Cada conta possui um armazenamento persistente de chave-valor que mapeia palavras de 256 bits para palavras de 256 bits
 chamado de **armazenamento**.
 
 Além disso, cada conta possui um **saldo** em
@@ -414,7 +414,7 @@ os remetentes de transações não podem abusar do sistema definindo um preço d
 
 .. index:: ! storage, ! memory, ! stack
 
-Armazenamento, Memória e a Pilha
+Armazenamento, Memória e a Pilha 
 ================================
 
 A Máquina Virtual Ethereum (EVM) têm três áreas onde pode armazenar dados:
@@ -485,7 +485,7 @@ Se uma exceção de falta de gas ocorrer na chamada interna (ou qualquer
 outra exceção), isso será assinado por um valor de erro colocado na stack.
 Nesse caso, apenas o gas enviado junto com a chamada será utilizado.
 No Solidity, o contrato que faz a chamada gera uma exceção manual por padrão em
-tais situações, de mode que as exceções "subam" a pilha de chamadas.
+tais situações, de modo que as exceções "subam" a pilha de chamadas.
 
 Como já mencionado, o contrato chamado (que pode ser o mesmo que o chamador)
 irá receber uma instância de memória limpa e terá acesso ao
@@ -537,7 +537,7 @@ segura. Dessa forma, pares de rede que não baixam a blockchain inteira
 Criar
 =====
 
-Os contratos até podem criar outros contratos usando uma opcode especial (ou seja,
+Os contratos até podem criar outros contratos usando um opcode especial (ou seja,
 eles não simplesmente chamam o endereço zero como uma trasação faria). A única diferença entre
 essas **chamadas de criação** e as chamadas de mensagem normais é que os dados do payload são
 executados e o resultado é armazenado como código, e o chamador / criador
@@ -559,7 +559,7 @@ removidos, esse Ether será perdido para sempre.
     A partir do ``EVM >= Cancun``, o ``selfdestruct`` irá **apenas** enviar todo Ether da conta para o destinatário indicado e não destruirá o contrato.
     No entando, quando o ``selfdestruct`` é chamado na mesma transação que cria o contrato,
     o comportamento de ``selfdestruct`` antes ao hardfork Cancun (ou seja, ``EVM <= Shangai``) é preservado, destruindo o contrato atual e
-    excluindo qualquer dado, incluindo chaves de armazenamento, código e a próprio conta.
+    excluindo qualquer dado, incluindo chaves de armazenamento, código e a própria conta.
     Consulte o `EIP-6780 <https://eips.ethereum.org/EIPS/eip-6780>`_ para mais detalhes.
 
     Esse novo comportamento resulta de uma mudança na rede que afeta todos os contratos presentes na
@@ -583,9 +583,9 @@ removidos, esse Ether será perdido para sempre.
     Mesmo que o código de um contrato não contenha uma chamada para ``selfdestruct``,
     ele ainda pode realizar essa operação utilizando ``delegatecall`` ou ``callcode``.
 
-Se vou quiser desativar seus contratos, deve **desativá-los**
+Se você quiser desativar seus contratos, deve **desativá-los**
 alterando algum estado interno que faça com que todas as funções revertam. Isso
-torna impossível o uso do contrato, já que ele retorna Ether imediatamente.
+torna impossível o uso do contrato, já que ele retornaria Ether imediatamente.
 
 
 .. index:: ! precompiled contracts, ! precompiles, ! contract;precompiled
